@@ -1,0 +1,128 @@
+@import '_settings'
+// @import 'node_modules/kouto-swiss'
+
+normalize-css()
+base()
+
+body
+  //padding 50px
+  font-family $roboto
+  font-weight 100
+  color $core
+#section
+  padding 20px
+  width 100%
+  height 100vh
+  background linear-gradient(rgba(44,56,53,0.7), rgba(44,56,53,0.9)), url('../img/bg-chick.jpg')
+  .navigation
+    margin-bottom 100px
+    width 100%
+    height 100px
+    .log-in
+      a
+        &:nth-of-type(2)
+          font-size 0.9em
+          font-weight 300
+        display inline-block
+        margin 10px
+        text-transform uppercase
+        color #fff
+        font-weight 700
+        font-size 0.8em
+        &:hover
+          color $blue
+      display inline-block
+      float right
+      font-weight 300
+    .logo
+      display inline-block
+      height 65px
+      width 200px
+  .body-text
+    color #fff
+    font-size 1.8em
+    @media (max-width: 500px)
+      font-size 1em
+      font-weight 500
+  .zi-button
+    margin-top 30px
+    padding-left 30px
+    a
+      font-weight 300
+
+.section
+  height 70vh
+  width 100%
+  .text
+    margin-top 50px
+  &.four
+    width 100%
+    height 10vh
+    margin-top 100px
+    background $core
+
+  &.three
+    padding 100px
+    @media (max-width: 500px)
+      padding 0
+    a
+      font-weight 500
+
+    .image
+      height 400px
+      background url("../img/hiw2.png") center center no-repeat
+
+  &.two
+    // overflow hidden
+    .image
+      height 400px
+      background url("../img/hiw.png") center center no-repeat
+    .title
+      text-align center
+  &.one
+    background $silver
+    font-weight 500
+    text-align center
+    .text
+      margin-top 100px
+
+
+
+
+.footer
+  background-color #292c2f
+  text-align center
+  font-size 1.2rem
+  padding 4rem
+  margin-top 200px
+  @media (max-width: 1200px)
+    display none
+
+  @media (max-width: 500px)
+    display none
+  .logo
+    height 100px
+    width 300px
+  p
+    &.slogan
+      color #8d9093
+      font-size 1.8rem
+      margin 0 0 1rem
+    &.copywrite
+      color #8f9296
+      font-size 0.875rem
+      margin 0
+  .links
+    a
+      list-style none
+      font-weight bold
+      color #ffffff
+      padding 3rem 0 2rem
+      margin 0
+      &::after
+        content "•"
+        padding 0 0.4rem 0 0.8rem
+      &:last-child
+        &::after
+          content ""
+          padding 0 0.4rem 0 0.8rem
